@@ -7,7 +7,7 @@ html { -webkit-text-stroke: 0.25px; }
 .canvas .fas, .canvas .fab { color: #cc3333; }
 .canvas h1 { font-size: 31.2pt; font-weight: 500; line-height: 1em; }
 .canvas h1 small { font-size: 19.2pt; font-weight: 300; }
-.canvas section { margin-bottom: 1.5em; }
+.canvas section:not(:last-child) { margin-bottom: 1.5em; }
 .canvas section > header { font-size: 19.2pt; color: #cc3333; margin-bottom: 8px; margin-top: -4px; }
 .canvas section article { margin-bottom: 10px; }
 .canvas .skills { column-count: 4; }
@@ -21,49 +21,9 @@ html { -webkit-text-stroke: 0.25px; }
 
 :root { --animate-delay: 400ms; }
 
-.animate__delay-1 { -webkit-animation-delay: calc(var(--animate-delay)*1); animation-delay: calc(var(--animate-delay)*1); }
-
-.animate__delay-2 { -webkit-animation-delay: calc(var(--animate-delay)*2); animation-delay: calc(var(--animate-delay)*2); }
-
-.animate__delay-3 { -webkit-animation-delay: calc(var(--animate-delay)*3); animation-delay: calc(var(--animate-delay)*3); }
-
-.animate__delay-4 { -webkit-animation-delay: calc(var(--animate-delay)*4); animation-delay: calc(var(--animate-delay)*4); }
-
-.animate__delay-5 { -webkit-animation-delay: calc(var(--animate-delay)*5); animation-delay: calc(var(--animate-delay)*5); }
-
-.animate__delay-6 { -webkit-animation-delay: calc(var(--animate-delay)*6); animation-delay: calc(var(--animate-delay)*6); }
-
-.animate__delay-7 { -webkit-animation-delay: calc(var(--animate-delay)*7); animation-delay: calc(var(--animate-delay)*7); }
-
-.animate__delay-8 { -webkit-animation-delay: calc(var(--animate-delay)*8); animation-delay: calc(var(--animate-delay)*8); }
-
-.animate__delay-9 { -webkit-animation-delay: calc(var(--animate-delay)*9); animation-delay: calc(var(--animate-delay)*9); }
-
-.animate__delay-10 { -webkit-animation-delay: calc(var(--animate-delay)*10); animation-delay: calc(var(--animate-delay)*10); }
-
-.animate__delay-11 { -webkit-animation-delay: calc(var(--animate-delay)*11); animation-delay: calc(var(--animate-delay)*11); }
-
-.animate__delay-12 { -webkit-animation-delay: calc(var(--animate-delay)*12); animation-delay: calc(var(--animate-delay)*12); }
-
-.animate__delay-13 { -webkit-animation-delay: calc(var(--animate-delay)*13); animation-delay: calc(var(--animate-delay)*13); }
-
-.animate__delay-14 { -webkit-animation-delay: calc(var(--animate-delay)*14); animation-delay: calc(var(--animate-delay)*14); }
-
-.animate__delay-15 { -webkit-animation-delay: calc(var(--animate-delay)*15); animation-delay: calc(var(--animate-delay)*15); }
-
-.animate__delay-16 { -webkit-animation-delay: calc(var(--animate-delay)*16); animation-delay: calc(var(--animate-delay)*16); }
-
-.animate__delay-17 { -webkit-animation-delay: calc(var(--animate-delay)*17); animation-delay: calc(var(--animate-delay)*17); }
-
-.animate__delay-18 { -webkit-animation-delay: calc(var(--animate-delay)*18); animation-delay: calc(var(--animate-delay)*18); }
-
-.animate__delay-19 { -webkit-animation-delay: calc(var(--animate-delay)*19); animation-delay: calc(var(--animate-delay)*19); }
-
-.animate__delay-20 { -webkit-animation-delay: calc(var(--animate-delay)*20); animation-delay: calc(var(--animate-delay)*20); }
-
 @media print { @page {}
-  .canvas { font-size: 14pt !important; }
+  html, body { height: auto; margin-bottom: 0; padding-bottom: 0; }
+  .canvas { font-size: 14pt !important; margin: 0; padding-bottom: 0; }
   .bg-light { background-color: #fff !important; }
-  .canvas { margin: 0; }
   article.row { page-break-inside: avoid; }
   a { text-decoration: none !important; } }
